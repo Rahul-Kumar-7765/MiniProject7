@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(10, 53, 66);
+    margin-left: 40%;
+    margin-top: 100px;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid gray;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 5px;
+    grid-template-areas: "hdr hdr hdr hdr" 
+                         "sbr man man man"
+                         "sbr man man man"
+                         "ftr ftr ftr ftr";
+                        
+}
+.box{
+    border: 2px solid rgb(174, 218, 174);
+    padding: 12px;
+}
+#box-1{
+    grid-area: hdr;
+    background-color:rgb(178, 9, 178);
+    
+}
+#box-2{
+    grid-area: sbr;
+    background-color:rgb(229, 122, 16);
+}
+#box-3{
+    grid-area: man;
+    background-color:rgb(140, 203, 16);
+}
+#box-4{
+    grid-area: ftr;
+    background-color:rgb(16, 225, 240);
+}
+.container:hover{
+    transform: rotate(180deg);
+    transition: 0.9;
+}
